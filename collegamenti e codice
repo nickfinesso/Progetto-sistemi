@@ -1,0 +1,78 @@
+🔌 Collegamenti
+
+MQ-2 →
+
+VCC → 5V
+
+GND → GND
+
+A0 → A0
+
+LED verde → Pin 8
+
+LED arancione → Pin 9
+
+LED rosso → Pin 10
+
+Buzzer → Pin 11
+
+(Con resistenza da 220Ω per ogni LED)
+
+
+
+
+
+
+
+
+**CODICE**
+
+
+// Pin
+const int sensorPin = A0;
+const int ledVerde = 8;
+const int ledArancione = 9;
+const int ledRosso = 10;
+const int buzzer = 11;
+
+// Soglie (da regolare dopo le prove)
+int sogliaAttenzione = 300;
+int sogliaPericolo = 600;
+
+void setup() {
+  pinMode(ledVerde, OUTPUT);
+  pinMode(ledArancione, OUTPUT);
+  pinMode(ledRosso, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valoreGas = analogRead(sensorPin);
+  Serial.println(valoreGas);
+
+  if (valoreGas < sogliaAttenzione) {
+    // ARIA PULITA
+    digitalWrite(ledVerde, HIGH);
+    digitalWrite(ledArancione, LOW);
+    digitalWrite(ledRosso, LOW);
+    digitalWrite(buzzer, LOW);
+  }
+  else if (valoreGas >= sogliaAttenzione && valoreGas < sogliaPericolo) {
+    // ATTENZIONE
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledArancione, HIGH);
+    digitalWrite(ledRosso, LOW);
+    digitalWrite(buzzer, LOW);
+  }
+  else {
+    // PERICOLO
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledArancione, LOW);
+    digitalWrite(ledRosso, HIGH);
+    digitalWrite(buzzer, HIGH);
+  }
+
+  delay(500);
+}
