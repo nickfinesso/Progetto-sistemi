@@ -24,7 +24,23 @@ LED rosso → pericolo
 Buzzer attivo (più semplice da usare)
 (oppure buzzer passivo se vuoi gestire frequenze diverse)
 
-🤖 Struttura robot (movimento opzionale)
+
+🔌 Alimentazione
+
+Cavo USB per Arduino
+oppure
+
+Batteria esterna (Power Bank o pacco batterie)
+
+📊 Funzionamento logico del progetto
+
+Verde → valore gas sotto soglia minima
+
+Arancione → valore medio (attenzione)
+
+Rosso → valore sopra soglia pericolosa + buzzer attivo
+
+🤖 Movimento opzionale
 
 Se il robottino deve muoversi:
 
@@ -42,27 +58,3 @@ Batterie (AA o batteria 7.4V ricaricabile)
 
 Se invece è fisso, non servono motori e driver.
 
-🔌 Alimentazione
-
-Cavo USB per Arduino
-oppure
-
-Batteria esterna (Power Bank o pacco batterie)
-
-🛠 Materiali extra utili
-
-Interruttore ON/OFF
-
-Basetta millefori (se vuoi saldare il progetto definitivo)
-
-Scatola contenitore
-
-Nastro isolante / fascette
-
-📊 Funzionamento logico del progetto
-
-Verde → valore gas sotto soglia minima
-
-Arancione → valore medio (attenzione)
-
-Rosso → valore sopra soglia pericolosa + buzzer attivo
