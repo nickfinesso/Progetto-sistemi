@@ -4,7 +4,7 @@
 
 -----
               Descrizione: BESTonZON 2 Pezzi Di Gioco Interattivo Buzzer Risposta Gioco Pulsante Di Risposta In Classe Oggetti Di Scena Per Quiz In Classe
-buzzer_mq2.png
+![Buzzer MQ-2](buzzer_mq2.png)
             Prezzo: 16,59 €
 -----
 Motore DC 775 Motore DC 12 V Motore CC ad alta coppia Motore CC Max 20000 RPM Cuscinetti a sfera Dual Ball Ruote di potenza silenziosa Aggiornamento motore DC Motore (con staffa)
