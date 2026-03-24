@@ -2,4 +2,31 @@ NOME PROGETTO:
             ROBOTTINO RILEVATORE DI GAS CON ARDUINO
 
 DESCRIZIONE:
+Questo progetto consiste nella realizzazione di un sistema di rilevamento gas basato su Arduino in grado di:
+1. Monitorare la qualità dell'aria.
+2. Rilevare la presenza di gas (GPL, metano, fumo, ecc.)
+3. Segnalare il livello di pericolo tramite LED.
+4. Attivare un allarme sonoro in caso di rischio.
 
+Il sistema utilizza un sensore di gas MQ-2  per misurare la concentrazione di gas nell'ambiente e prende decisioni in base ai dati rilevati.
+
+FUNZIONAMENTO:
+Il sensore rileva la concentrazione di gas.
+Se il valore è basso --> LED verde acceso (aria pulita)
+Se il valore è medio --> LED arancione acceso (attenzione)
+Se il valore è alto --> LED rosso acceso + buzzer attivo (pericolo)
+
+SCHEMA A BLOCCHI
+
+[Sensore MQ-2] → [Arduino UNO] → [LED verde / arancione / rosso]
+
+                                  ↓  
+
+                               [Buzzer]  
+
+
+
+Distribuzione dei ruoli:
+
+Luca --->
+Niccolò ---> 
