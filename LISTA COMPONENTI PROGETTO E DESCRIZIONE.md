@@ -1,7 +1,7 @@
-      Descrizione: AZDelivery MQ-2 Modulo Sensore di Gas, Fumo e Qualità dell'Aria compatibile con Arduino incluso un E-Book!
+              Descrizione: AZDelivery MQ-2 Modulo Sensore di Gas, Fumo e Qualità dell'Aria compatibile con Arduino incluso un E-Book!
 ![Sensore MQ-2](mq2.png)
-  Prezzo: 7,29 €
-      https://www.amazon.it/AZDelivery-Sensore-qualit%C3%A0-modulo-Arduino/dp/B07CYYB82F/ref=sr_1_1?crid=32B555BJU7WJA&dib=eyJ2IjoiMSJ9.4bCnUPsQeEULcXspC2HqvctT1idZU3hOUrbJd96M8UzLmQaupYxkM6GfY7x9w5oHxIEx2ofkaHG-F94TLQ8dtreeb6Z8x5gvWc3cMyZ857fKR85Kf5MnaKWHPYOXB_JWknACoRfccpH87OX4meZM2XzvruHIVVzg02YcCOghCQ6NpUnwqQmo9UlJ6JecdFKD2etSKy--A5_Nv9UIU-yEFIhrvji7AhCV9uDYGsJDGRcg29SPx_sYTQGKLMtnu8ZXCeIo-oamg79W7rBJrZsBiuLHivYwDlWzAQb_BRQ82TA.KGVds6I_NDTm3skaquUp7qNS2K1glQuAwj6yZmSok-g&dib_tag=se&keywords=azdelivery%2Bmq-2%2Bmodulo%2Bsensore%2Bdi%2Bgas%2C%2Bfumo%2Be%2Bqualit%C3%A0%2Bdell%27aria%2Bcompatibile%2Bcon%2Barduino%2Bincluso%2Bun%2Be-book!%2Bcosto%3A%2B7%2C29%2B%E2%82%AC
+              Prezzo: 7,29 €
+
 -----
 BESTonZON 2 Pezzi Di Gioco Interattivo Buzzer Risposta Gioco Pulsante Di Risposta In Classe Oggetti Di Scena Per Quiz In Classe
 costo: 16,59 €
