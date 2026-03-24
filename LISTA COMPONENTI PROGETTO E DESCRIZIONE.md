@@ -3,7 +3,7 @@
               Prezzo: 7,29 €
 
 -----
-BESTonZON 2 Pezzi Di Gioco Interattivo Buzzer Risposta Gioco Pulsante Di Risposta In Classe Oggetti Di Scena Per Quiz In Classe
+              Descrizione: BESTonZON 2 Pezzi Di Gioco Interattivo Buzzer Risposta Gioco Pulsante Di Risposta In Classe Oggetti Di Scena Per Quiz In Classe
 buzzer_mq2.png
             Prezzo: 16,59 €
 -----
