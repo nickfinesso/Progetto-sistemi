@@ -4,8 +4,8 @@
 
 -----
 BESTonZON 2 Pezzi Di Gioco Interattivo Buzzer Risposta Gioco Pulsante Di Risposta In Classe Oggetti Di Scena Per Quiz In Classe
-costo: 16,59 €
-https://www.amazon.it/BESTonZON-Interattivo-Risposta-Pulsante-Oggetti/dp/B0FX1485SQ/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2BF25P2UVQAM6&dib=eyJ2IjoiMSJ9.KDxrc4SArjmSeCqHG-PxqBWs7YyZcEKa4TPKFHsRmFks-MaZYZH0lpeQxYdMEK07HN8kdQu5TiSamJjVrbqIhzIAwIHSN4WF3NR2lgbCi-rXwKHBeIlnxWPKbJPVTQGr9EG0Q7NDKsoDXWddNI8vK1I7ZVZwlJbFVsL27GwWWi2NMdQL_dzmTpXr0mcadflowWcCIzQ4Y_zVk1mP3OsoQB6sYM2nB3wMH5lMZtOgkwQE2V-FDueAApwoJX7E0uPpIuXOkImxTa7XGRnqBx_EafRfczHV4uIj8OSz9nG5htw.k4d85EnNXSzoAP91CqazbNZKFuJSm7NiI_lZ-vFWd-w&dib_tag=se&keywords=BESTonZON+2+Pezzi+Di+Gioco+Interattivo+Buzzer+Risposta+Gioco+Pulsante+Di+Risposta+In+Classe+Oggetti+Di+Scena+Per+Quiz+In+Classe&qid=1773829017&sprefix=bestonzon+2+pezzi+di+gioco+interattivo+buzzer+risposta+gioco+pulsante+di+risposta+in+classe+oggetti+di+scena+per+quiz+in+classe%2Caps%2C232&sr=8-1
+buzzer_mq2.png
+            Prezzo: 16,59 €
 -----
 Motore DC 775 Motore DC 12 V Motore CC ad alta coppia Motore CC Max 20000 RPM Cuscinetti a sfera Dual Ball Ruote di potenza silenziosa Aggiornamento motore DC Motore (con staffa)
 COSTO: 16,14 €
