@@ -25,5 +25,5 @@ Schema a blocchi
 ↓
 [Buzzer]
 👥 Distribuzione dei ruoli
-Luca →
+Luca → programmazione codice e ricerca componenti
 Niccolò →
