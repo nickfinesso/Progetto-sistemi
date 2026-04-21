@@ -40,20 +40,3 @@ Arancione → valore medio (attenzione)
 
 Rosso → valore sopra soglia pericolosa + buzzer attivo
 
-🤖 Movimento opzionale
-
-Se il robottino deve muoversi:
-
-2 motori DC
-
-Driver motori L298N
-
-Ruote (2 + 1 ruota folle)
-
-Telaio per robot
-
-Portabatterie
-
-Batterie (AA o batteria 7.4V ricaricabile)
-
-Se invece è fisso, non servono motori e driver.
