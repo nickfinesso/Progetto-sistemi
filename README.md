@@ -1,4 +1,4 @@
-🤖 ROBOTTINO RILEVATORE DI GAS CON ARDUINO###
+🤖 ROBOTTINO RILEVATORE DI GAS CON ARDUINO                                                                                                                                                                                     
 📌 Descrizione
 
 Questo progetto prevede la realizzazione di un piccolo sistema intelligente basato su Arduino, progettato per il monitoraggio della qualità dell’aria e la rilevazione di gas potenzialmente pericolosi.
@@ -35,8 +35,8 @@ Il microcontrollore:
 
 legge i dati analogici dal sensore MQ-2
 confronta i valori con soglie preimpostate
-attiva i LED e il buzzer in base al livello rilevato
- Schema a blocchi
+attiva i LED e il buzzer in base al livello rilevato                                                                                                                                                                           
+ Schema a blocchi                                                                                                                                                                                                              
 [Sensore MQ-2]
         ↓
 [Arduino UNO]
