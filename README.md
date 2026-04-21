@@ -45,4 +45,5 @@ attiva i LED e il buzzer in base al livello rilevato
         ↓
      [Buzzer]                                                                                                                                                                                                                  
 👥 Distribuzione dei ruoli                                                                                                                                                                                                    
-Luca → programmazione codice e ricerca componenti
+Luca → programmazione codice e ricerca componenti                                                                                                                                                                                     
+Niccolò → realizzazzione del circuito
