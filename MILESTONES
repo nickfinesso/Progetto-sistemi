@@ -1,6 +1,7 @@
 
-| Comando | Azione |
+| Tasto/Scorciatoia | Descrizione |
 | :--- | :--- |
-| `Ctrl` + `C` | Copia |
-| `Ctrl` + `V` | Incolla |
-| `Ctrl` + `Z` | Annulla |
+| <kbd>Ctrl</kbd>+<kbd>C</kbd> | Copia il testo selezionato |
+| <kbd>Ctrl</kbd>+<kbd>V</kbd> | Incolla il testo |
+| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | Crea una nuova cartella |
+| <kbd>Alt</kbd>+<kbd>F4</kbd> | Chiude l'applicazione |
