@@ -32,11 +32,12 @@ Questo comportamento permette una lettura immediata e intuitiva dello stato dell
 
 🧠 Logica del sistema
 
-Il microcontrollore:
+Il microcontrollore: 
 
 legge i dati analogici dal sensore MQ-2
 confronta i valori con soglie preimpostate
 attiva i LED e il buzzer in base al livello rilevato
+
 🔌 Schema a blocchi
 [Sensore MQ-2] → [Arduino UNO] → [LED verde / arancione / rosso]
                                    ↓
