@@ -27,7 +27,6 @@ Buzzer → Pin 11
 
 **CODICE**
 
-
 // Pin
 const int sensorPin = A0;
 const int ledVerde = 2;
@@ -35,48 +34,46 @@ const int ledArancione = 4;
 const int ledRosso = 7;
 const int buzzer = 11;
 
-// Soglie basate sul tuo sensore
-int sogliaVerde = 500;      // aria pulita
-int sogliaArancione = 700;  // attenzione
-int sogliaRosso = 850;      // pericolo
+// Soglie
+int sogliaVerde = 500;     // Sotto 500: Aria pulita
+int sogliaArancione = 700;  // Tra 500 e 700: Attenzione
+int sogliaRosso = 850;      // Sopra 850: Pericolo
 
 void setup() {
   pinMode(ledVerde, OUTPUT);
   pinMode(ledArancione, OUTPUT);
   pinMode(ledRosso, OUTPUT);
   pinMode(buzzer, OUTPUT);
-  
-  Serial.begin(9600); // per monitor seriale
+  Serial.begin(9600);
 }
 
 void loop() {
   int valoreGas = analogRead(sensorPin);
-  Serial.println(valoreGas); // vedere valori reali
+  Serial.print("Livello Gas: ");
+  Serial.println(valoreGas);
 
   if (valoreGas < sogliaVerde) {
-    // LED verde acceso
+    // Sicurezza - Solo Verde
     digitalWrite(ledVerde, HIGH);
     digitalWrite(ledArancione, LOW);
     digitalWrite(ledRosso, LOW);
     noTone(buzzer);
-  }
-  else if (valoreGas < sogliaArancione) {
-    // LED arancione acceso
+  } 
+  else if (valoreGas < sogliaRosso) { 
+    // Attenzione - Solo Arancione (valore tra 500 e 849)
     digitalWrite(ledVerde, LOW);
     digitalWrite(ledArancione, HIGH);
     digitalWrite(ledRosso, LOW);
     noTone(buzzer);
-  }
+  } 
   else {
-    // LED rosso + buzzer
+    // Pericolo - Rosso + Buzzer (valore >= 850)
     digitalWrite(ledVerde, LOW);
     digitalWrite(ledArancione, LOW);
     digitalWrite(ledRosso, HIGH);
-    tone(buzzer, 1000); // suono a 1000 Hz
+    tone(buzzer, 1000); 
   }
 
-  delay(300); // piccolo ritardo per stabilità
+  delay(500); // Ritardo unico per stabilità lettura
 }
 
-  delay(500);
-}
