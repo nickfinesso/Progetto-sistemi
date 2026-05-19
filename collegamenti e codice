@@ -27,53 +27,76 @@ Buzzer → Pin 11
 
 **CODICE**
 
-// Pin
-const int sensorPin = A0;
+#define sensorPin A0
+
 const int ledVerde = 2;
 const int ledArancione = 4;
 const int ledRosso = 7;
+
 const int buzzer = 11;
 
-// Soglie
-int sogliaVerde = 500;     // Sotto 500: Aria pulita
-int sogliaArancione = 700;  // Tra 500 e 700: Attenzione
-int sogliaRosso = 850;      // Sopra 850: Pericolo
+int sogliaVerde = 230;
+int sogliaArancione = 370;
+int sogliaRosso = 450;
+
+int stato = -1;
+
+// filtro (USALO)
+int leggiGas() {
+  long somma = 0;
+
+  for (int i = 0; i < 15; i++) {
+    somma += analogRead(sensorPin);
+    delay(5);
+  }
+
+  return somma / 15;
+}
 
 void setup() {
   pinMode(ledVerde, OUTPUT);
   pinMode(ledArancione, OUTPUT);
   pinMode(ledRosso, OUTPUT);
   pinMode(buzzer, OUTPUT);
+
   Serial.begin(9600);
 }
 
 void loop() {
-  int valoreGas = analogRead(sensorPin);
-  Serial.print("Livello Gas: ");
+
+  int valoreGas = leggiGas();
+
   Serial.println(valoreGas);
 
-  if (valoreGas < sogliaVerde) {
-    // Sicurezza - Solo Verde
-    digitalWrite(ledVerde, HIGH);
-    digitalWrite(ledArancione, LOW);
-    digitalWrite(ledRosso, LOW);
-    noTone(buzzer);
-  } 
-  else if (valoreGas < sogliaRosso) { 
-    // Attenzione - Solo Arancione (valore tra 500 e 849)
-    digitalWrite(ledVerde, LOW);
-    digitalWrite(ledArancione, HIGH);
-    digitalWrite(ledRosso, LOW);
-    noTone(buzzer);
-  } 
-  else {
-    // Pericolo - Rosso + Buzzer (valore >= 850)
+  // 🔴 ROSSO
+  if (valoreGas > sogliaRosso && stato != 2) {
+    stato = 2;
+
     digitalWrite(ledVerde, LOW);
     digitalWrite(ledArancione, LOW);
     digitalWrite(ledRosso, HIGH);
-    tone(buzzer, 1000); 
+    digitalWrite(buzzer, HIGH);
   }
 
-  delay(500); // Ritardo unico per stabilità lettura
-}
+  // 🟠 ARANCIONE
+  else if (valoreGas > sogliaArancione && stato != 1) {
+    stato = 1;
 
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledArancione, HIGH);
+    digitalWrite(ledRosso, LOW);
+    digitalWrite(buzzer, LOW);
+  }
+
+  // 🟢 VERDE
+  else if (stato != 0) {
+    stato = 0;
+
+    digitalWrite(ledVerde, HIGH);
+    digitalWrite(ledArancione, LOW);
+    digitalWrite(ledRosso, LOW);
+    digitalWrite(buzzer, LOW);
+  }
+
+  delay(400);
+}
